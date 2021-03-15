@@ -1,0 +1,122 @@
+.board{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: relative;
+  .complete{
+    font-size: 5vh;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;
+    text-align: center;
+    .reset-button{
+      width:80% ;
+      height: 50px;
+      border-radius: 8px;
+      border: none;
+      background: black;
+      color: whitesmoke;
+      font-weight: 700;
+      font-size: 1rem;
+      &:hover{
+        box-shadow: 0 0.5em 0.5em -0.4em #5c5a5c;
+        transform: translateY(-0.25em);
+
+      }
+    }
+  }
+  .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: 750px;
+    max-width: 750px;
+
+    .box{
+    width: 25vw;
+    height: 25vw;
+    max-height: 200px;
+    max-width: 200px;
+    border: 1vh solid white;
+    background: black;
+   &:hover{
+     border: 0;
+     padding:1vh;
+     filter: brightness(1.1);
+     box-shadow: 15px 25px 45px rgba(0, 0, 0, 0.45), 0 20px 16px rgba(0, 0, 0, 0.25);
+    }
+   }
+  }
+  .controls{
+    display: flex;
+    margin-bottom: 10px;
+    width: 75vw;
+    max-width: 653px;
+    justify-content: space-between;
+    .player-section{
+        display: flex;
+       .player-wrapper{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .player-tag{
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+          .player-color{
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+          }
+
+        }
+     }
+
+  }
+  .popup{
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    &-message{
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    &-button{
+       width:150px;
+      height: 50px;
+      border-radius: 8px;
+      border: none;
+      background: black;
+      color: whitesmoke;
+      font-weight: 700;
+      font-size: 1rem;
+      outline: none;
+      &:hover{
+        box-shadow: 0 0.5em 0.5em -0.4em #5c5a5c;
+        transform: translateY(-0.25em);
+
+      }
+
+    }
+
+  }
+
+}
